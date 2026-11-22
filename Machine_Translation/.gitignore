@@ -1,0 +1,9 @@
+# trained models from training runs and experiments (large; recreate by training)
+checkpoints/
+experiments/*/
+
+# the best model in models/ and experiments/results.csv are kept
+
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
