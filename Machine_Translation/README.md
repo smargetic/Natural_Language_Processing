@@ -115,16 +115,16 @@ Italian builds many forms from one stem (*parlo, parli, parliamo, parlate…*), 
 |---|---|
 | 1. Setup and settings | Imports, GPU check, default `CONFIG` |
 | 2. Preparing the Data | Loading, cleaning, train / validation / test split, the four segmentation methods, vocabularies, batches |
-| 3. Building blocks | Embedding, RNN cell, LSTM cell |
-| 4. Encoder | Reads the English sentence (optionally in both directions) |
+| 3. Building blocks | Embedding, RNN cell, LSTM cell, and the Transformer nodes (positional encoding, multi-head attention, feed-forward, encoder and decoder layers) |
+| 4. Encoder | Reads the English sentence: RNN / LSTM (optionally in both directions) and Transformer |
 | 5. Attention | Dot, scaled dot and Bahdanau scoring |
-| 6. Decoder | Writes the Italian sentence one token at a time |
-| 7. Seq2Seq | Encoder + decoder; teacher forcing |
+| 6. Decoder | Writes the Italian sentence one token at a time: RNN / LSTM and Transformer |
+| 7. Seq2Seq | Encoder + decoder for either model type; teacher forcing |
 | 8. Beam search | Turns the model's scores into a sentence |
 | 9. Training loop | Loss, optimizer, gradient clipping, checkpoints |
 | 10. Evaluation | Loss and BLEU |
 | 11. `run_experiment(config)` | The whole pipeline for one configuration in one call |
-| 12. Transformer | Positional encoding, multi-head attention, encoder and decoder layers |
+| 12. Roadmap | What's done and what's next |
 
 ---
 
